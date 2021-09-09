@@ -13,6 +13,6 @@ RUN mkdir /disks && \
 
 ENV LIBGUESTFS_BACKEND=direct
 
-COPY build/virtv2v/bin /usr/local/bin
+COPY bin/entrypoint /usr/local/bin/entrypoint
 
 ENTRYPOINT ["/usr/local/bin/entrypoint"]
